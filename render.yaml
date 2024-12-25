@@ -1,0 +1,9 @@
+version: 1
+static:
+  publish: .
+  cleanUrls: true
+  routes:
+    - src: /packages/(.*)
+      dest: packages/$1
+    - src: /(.*)
+      dest: index.html
