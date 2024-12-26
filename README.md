@@ -10,7 +10,6 @@ Website contains:
 - Services
 - Portfolio
 - Project in mind
-- Testimonial
 - Contact
 - Footer 
 
