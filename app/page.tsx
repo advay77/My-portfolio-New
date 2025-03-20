@@ -166,22 +166,18 @@ export default function Portfolio() {
       </nav>
 
       {/* Home Section */}
-     <section id="home" className="min-h-screen flex items-center justify-center relative z-10 pt-16 px-2 sm:px-4">
-  <div className="container mx-auto px-4 py-12 md:py-20 flex flex-col items-center text-center">
-    <div className="mb-6 md:mb-8 relative">
-      <div className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-green-500 overflow-hidden">
-        <Image
-          src="https://via.placeholder.com/160x160" // Square placeholder image
-          alt="Advay Anand"
-          width={160}
-          height={160}
-          className="object-cover w-full h-full"
-          style={{ objectPosition: 'center' }}
-        />
-      </div>
-    </div>
-  </div>
-</section>
+      <section id="home" className="min-h-screen flex items-center justify-center relative z-10 pt-16 px-2 sm:px-4">
+        <div className="container mx-auto px-4 py-12 md:py-20 flex flex-col items-center text-center">
+          <div className="mb-6 md:mb-8 relative">
+            <div className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-green-500 overflow-hidden">
+              <Image
+                src="P1.jpg?height=160&width=160"
+                alt="Advay Anand"
+                width={160}
+                height={160}
+                className="object-cover"
+              />
+            </div>
             <div className="absolute -bottom-2 -right-2 bg-black p-2 rounded-full border border-green-500">
               <Code className="w-5 h-5 md:w-6 md:h-6 text-green-500" />
             </div>
@@ -286,16 +282,13 @@ export default function Portfolio() {
             <div className="order-1 md:order-2 flex justify-center">
               <div className="relative">
                 <div className="w-64 h-64 md:w-80 md:h-80 rounded-lg overflow-hidden border-4 border-green-500/50">
-                  <div className="w-32 h-40 rounded-lg overflow-hidden"> {/* Rectangular container */}
-  <Image
-    src="/P2.jpg"
-    alt="Advay Anand"
-    width={320}
-    height={400}
-    className="object-cover w-full h-full" // Cover the container
-    style={{ objectPosition: 'center' }} // Center the image
-  />
-</div>
+                  <Image
+                    src="/P2.jpg?height=320&width=320"
+                    alt="Advay Anand"
+                    width={320}
+                    height={320}
+                    className="object-cover"
+                  />
                 </div>
                 <div className="absolute -bottom-4 -right-4 bg-black p-3 rounded-lg border border-green-500">
                   <User className="w-8 h-8 text-green-500" />
