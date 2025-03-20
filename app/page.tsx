@@ -286,13 +286,16 @@ export default function Portfolio() {
             <div className="order-1 md:order-2 flex justify-center">
               <div className="relative">
                 <div className="w-64 h-64 md:w-80 md:h-80 rounded-lg overflow-hidden border-4 border-green-500/50">
-                  <Image
-                    src="/P2.jpg?height=320&width=320"
-                    alt="Advay Anand"
-                    width={320}
-                    height={320}
-                    className="object-cover"
-                  />
+                  <div className="w-32 h-40 rounded-lg overflow-hidden"> {/* Rectangular container */}
+  <Image
+    src="/P2.jpg"
+    alt="Advay Anand"
+    width={320}
+    height={400}
+    className="object-cover w-full h-full" // Cover the container
+    style={{ objectPosition: 'center' }} // Center the image
+  />
+</div>
                 </div>
                 <div className="absolute -bottom-4 -right-4 bg-black p-3 rounded-lg border border-green-500">
                   <User className="w-8 h-8 text-green-500" />
