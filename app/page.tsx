@@ -443,8 +443,8 @@ export default function Portfolio() {
                 className="bg-black/50 border-green-500/30 overflow-hidden hover:border-green-500 transition-all group"
               >
                 <div className="relative h-48 overflow-hidden">
-                  <Image
-                    src={project.image || "/placeholder.svg"}
+                  <img
+                    src={project.image || "/placeholder-logo.svg"}
                     alt={project.title}
                     width={300}
                     height={200}
@@ -620,4 +620,3 @@ export default function Portfolio() {
     </div>
   )
 }
-
