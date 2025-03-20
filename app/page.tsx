@@ -171,7 +171,7 @@ export default function Portfolio() {
           <div className="mb-6 md:mb-8 relative">
             <div className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-green-500 overflow-hidden">
               <Image
-                src="/placeholder.svg?height=160&width=160"
+                src="P1.jpg?height=160&width=160"
                 alt="Advay Anand"
                 width={160}
                 height={160}
@@ -283,7 +283,7 @@ export default function Portfolio() {
               <div className="relative">
                 <div className="w-64 h-64 md:w-80 md:h-80 rounded-lg overflow-hidden border-4 border-green-500/50">
                   <Image
-                    src="/placeholder.svg?height=320&width=320"
+                    src="/P2.jpg?height=320&width=320"
                     alt="Advay Anand"
                     width={320}
                     height={320}
