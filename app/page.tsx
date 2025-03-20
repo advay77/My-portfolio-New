@@ -171,7 +171,7 @@ export default function Portfolio() {
           <div className="mb-6 md:mb-8 relative">
             <div className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-green-500 overflow-hidden">
               <Image
-                src="/placeholder.svg?height=160&width=160"
+                src="P1.jpg?height=160&width=160"
                 alt="Advay Anand"
                 width={160}
                 height={160}
@@ -283,7 +283,7 @@ export default function Portfolio() {
               <div className="relative">
                 <div className="w-64 h-64 md:w-80 md:h-80 rounded-lg overflow-hidden border-4 border-green-500/50">
                   <Image
-                    src="/placeholder.svg?height=320&width=320"
+                    src="/P2.jpg?height=320&width=320"
                     alt="Advay Anand"
                     width={320}
                     height={320}
@@ -405,7 +405,7 @@ export default function Portfolio() {
                 description:
                   "A website consisting of medical treatment with ayurved features like- bed booking,blood bank, chatbot,etc.",
                 tech: ["React", "Flask", "MongoDB", "JavaScript"],
-                image: "/placeholder.svg?height=200&width=300",
+                image: "/photo1.png?height=200&width=300",
               },
               {
                 title: "Capture The Flag (CTF🚩)",
@@ -417,19 +417,19 @@ export default function Portfolio() {
                 title: "Coffee Website (Brew-Heaven☕)",
                 description: "Coffee Website with uniques features and great UI with maps feature avialable.",
                 tech: ["React", "Java-Script","Node.js/Express", "Tailwind-Css", "MongoDB"],
-                image: "/placeholder.svg?height=200&width=300",
+                image: "/photo2.png?height=200&width=300",
               },
               {
                 title: "Portfolio Website Ø",
                 description: "Custom portfolio website with animations and responsive design.",
                 tech: ["Typescript", "Taillwind-css", "JavaScript", "React.js", "ShadcnUI", "MongoDb"],
-                image: "/placeholder.svg?height=200&width=300",
+                image: "/photo6.png?height=200&width=300",
               },
               {
                 title: "Restaurant Website (RESTORAN 🍴🥗)",
                 description: "A restaurant website made for fun and to get your watery mouth",
                 tech: ["React", "Javascript","TypeScript", "Tailwind CSS", "Flask/Python"],
-                image: "/placeholder.svg?height=200&width=300",
+                image: "/photo.?height=200&width=300",
               },
               {
                 title: "Jal-Saaf-Tech 💧",
@@ -443,8 +443,8 @@ export default function Portfolio() {
                 className="bg-black/50 border-green-500/30 overflow-hidden hover:border-green-500 transition-all group"
               >
                 <div className="relative h-48 overflow-hidden">
-                  <Image
-                    src={project.image || "/placeholder.svg"}
+                  <img
+                    src={project.image || "/placeholder-logo.svg"}
                     alt={project.title}
                     width={300}
                     height={200}
@@ -620,4 +620,3 @@ export default function Portfolio() {
     </div>
   )
 }
-
