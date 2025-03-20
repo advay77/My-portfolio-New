@@ -5,7 +5,7 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "Advay Anand | Full Stack Web Developer",
   description: "Portfolio website of Advay Anand, a Full Stack Web Developer specializing in modern web applications.",
-  generator: "v0.dev",
+  keywords: "Advay Anand, Full Stack Web Developer, Web Development, Portfolio",
 }
 
 export default function RootLayout({
