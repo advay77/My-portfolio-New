@@ -58,6 +58,15 @@
   background-color: hsl(var(--primary));
 }
 
+/* Global box-sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -68,6 +77,7 @@ body {
   color: hsl(var(--foreground));
   overflow-x: hidden;
   position: relative;
+<<<<<<< HEAD
   font-family: "Inter", sans-serif;
   min-height: 100vh;
 }
@@ -709,6 +719,63 @@ canvas {
   .glow-animation {
     animation-duration: 2s;
   }
+=======
+  font-family: 'Inter', sans-serif; /* Use a modern font */
+}
+
+/* Matrix background canvas */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place behind all content */
+  pointer-events: none; /* Prevent interaction */
+}
+
+/* Improve mobile responsiveness */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 1.875rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  section {
+    padding-top: 4rem;
+  }
+
+  input,
+  textarea,
+  button {
+    font-size: 0.875rem;
+  }
+}
+
+/* Glowing effect for interactive elements */
+button,
+a {
+  transition: all 0.3s ease;
+}
+
+button:hover,
+a:hover {
+  filter: brightness(1.2);
+  box-shadow: 0 0 10px hsl(var(--primary));
+}
+
+/* Section content visibility */
+section > div {
+  position: relative;
+  z-index: 1;
+>>>>>>> d0f0a8dbb1805aa5c1c254e6109f0f51307e1195
 }
 
 /* Layer definitions */
@@ -723,6 +790,7 @@ canvas {
 }
 
 @layer utilities {
+<<<<<<< HEAD
   .hidden {
     display: none;
   }
@@ -732,3 +800,7 @@ canvas {
   }
 }
 
+=======
+  /* Add custom utilities here if needed */
+}
+>>>>>>> d0f0a8dbb1805aa5c1c254e6109f0f51307e1195

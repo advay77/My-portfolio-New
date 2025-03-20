@@ -1,7 +1,7 @@
 # Welcome to My Portfolio! 🎉
 
 ## About Me
-Hello! I'm a passionate developer who loves creating beautiful and functional web applications. 🌐
+Hello! I'm Advay Anand who loves creating beautiful and functional web applications. 🌐
 
 ## Technologies Used
 - **HTML** 🏗️
@@ -16,10 +16,10 @@ Hello! I'm a passionate developer who loves creating beautiful and functional we
 - **Colorful UI** 🌈
 
 ## Preview
-![Portfolio Preview](https://example.com/preview.gif) <!-- Replace with actual GIF link -->
+[Portfolio Preview](https://v0-advay-anand-portfolio-rj.vercel.app/)
 
 ## Contact
-Feel free to reach out to me on [GitHub](https://github.com/advay77) or [LinkedIn](https://www.linkedin.com/in/yourprofile).
+Feel free to reach out to me on [GitHub](https://github.com/advay77) or [LinkedIn](https://www.linkedin.com/in/advay-anand-a89024277/).
 
 ---
 
