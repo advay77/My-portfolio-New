@@ -429,13 +429,13 @@ export default function Portfolio() {
                 title: "Restaurant Website (RESTORAN 🍴🥗)",
                 description: "A restaurant website made for fun and to get your watery mouth",
                 tech: ["React", "Javascript","TypeScript", "Tailwind CSS", "Flask/Python"],
-                image: "/photo.?height=200&width=300",
+                image: "/photo3.png?height=200&width=300",
               },
               {
                 title: "Jal-Saaf-Tech 💧",
                 description: "Website made for water security with an IOT Device embedded and maps feature",
                 tech: ["React.js", "Tailwaind CSS", "Flask/Python", "MongoDB",],
-                image: "/placeholder.svg?height=200&width=300",
+                image: "/photo4.png?height=200&width=300",
               },
             ].map((project, index) => (
               <Card
