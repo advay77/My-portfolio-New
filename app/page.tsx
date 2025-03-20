@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import { ArrowDown, Code, Github, Linkedin, Mail, Send, User } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import { motion, useAnimation, useInView } from "framer-motion"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -17,7 +18,6 @@ export default function Portfolio() {
 
   // Add a meta viewport tag to ensure proper mobile rendering
   useEffect(() => {
-    // Ensure proper viewport meta tag for mobile devices
     const meta = document.createElement("meta")
     meta.name = "viewport"
     meta.content = "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
@@ -76,7 +76,6 @@ export default function Portfolio() {
 
     const handleResize = () => {
       resizeCanvas()
-      // Reset drops when resizing
       for (let i = 0; i < columns; i++) {
         drops[i] = Math.floor((Math.random() * canvas.height) / fontSize)
       }
@@ -116,6 +115,12 @@ export default function Portfolio() {
     }
   }, [sections])
 
+  // Fade-in animations for sections
+  const sectionVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  }
+
   return (
     <div className="relative min-h-screen bg-black text-white overflow-x-hidden">
       {/* Matrix Background */}
@@ -124,6 +129,9 @@ export default function Portfolio() {
         className="fixed top-0 left-0 w-full h-full z-0 opacity-30"
         style={{ position: "fixed", top: 0, left: 0, width: "100%", height: "100%" }}
       />
+
+      {/* Scroll Progress Indicator */}
+      <div className="fixed top-0 left-0 h-1 bg-green-500 z-50" style={{ width: `${(activeSection === "home" ? 0 : sections.indexOf(activeSection) / (sections.length - 1)) * 100}%` }} />
 
       {/* Navigation */}
       <nav className="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-sm border-b border-green-500/20">
@@ -166,7 +174,13 @@ export default function Portfolio() {
       </nav>
 
       {/* Home Section */}
-      <section id="home" className="min-h-screen flex items-center justify-center relative z-10 pt-16 px-2 sm:px-4">
+      <motion.section
+        id="home"
+        className="min-h-screen flex items-center justify-center relative z-10 pt-16 px-2 sm:px-4"
+        variants={sectionVariants}
+        initial="hidden"
+        animate="visible"
+      >
         <div className="container mx-auto px-4 py-12 md:py-20 flex flex-col items-center text-center">
           <div className="mb-6 md:mb-8 relative">
             <div className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-green-500 overflow-hidden">
@@ -234,10 +248,16 @@ export default function Portfolio() {
             <span className="sr-only">Scroll Down</span>
           </a>
         </div>
-      </section>
+      </motion.section>
 
       {/* About Me Section */}
-      <section id="about" className="min-h-screen flex items-center justify-center relative z-10 pt-16 px-2 sm:px-4">
+      <motion.section
+        id="about"
+        className="min-h-screen flex items-center justify-center relative z-10 pt-16 px-2 sm:px-4"
+        variants={sectionVariants}
+        initial="hidden"
+        animate="visible"
+      >
         <div className="container mx-auto px-4 py-20">
           <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">
             About <span className="text-green-500">Me</span>
@@ -262,7 +282,7 @@ export default function Portfolio() {
                 </div>
                 <div>
                   <p className="text-gray-400">Email:</p>
-                  <p className="font-medium">advayanand87gmail.com</p>
+                  <p className="font-medium">advayanand87@gmail.com</p>
                 </div>
                 <div>
                   <p className="text-gray-400">From:</p>
@@ -297,10 +317,16 @@ export default function Portfolio() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Skills Section */}
-      <section id="skills" className="min-h-screen flex items-center justify-center relative z-10 pt-16 px-2 sm:px-4">
+      <motion.section
+        id="skills"
+        className="min-h-screen flex items-center justify-center relative z-10 pt-16 px-2 sm:px-4"
+        variants={sectionVariants}
+        initial="hidden"
+        animate="visible"
+      >
         <div className="container mx-auto px-4 py-20">
           <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">
             My <span className="text-green-500">Skills</span>
@@ -390,10 +416,16 @@ export default function Portfolio() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Projects Section */}
-      <section id="projects" className="min-h-screen flex items-center justify-center relative z-10 pt-16 px-2 sm:px-4">
+      <motion.section
+        id="projects"
+        className="min-h-screen flex items-center justify-center relative z-10 pt-16 px-2 sm:px-4"
+        variants={sectionVariants}
+        initial="hidden"
+        animate="visible"
+      >
         <div className="container mx-auto px-4 py-20">
           <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">
             My <span className="text-green-500">Projects</span>
@@ -483,10 +515,16 @@ export default function Portfolio() {
             ))}
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Contact Section */}
-      <section id="contact" className="min-h-screen flex items-center justify-center relative z-10 pt-16 px-2 sm:px-4">
+      <motion.section
+        id="contact"
+        className="min-h-screen flex items-center justify-center relative z-10 pt-16 px-2 sm:px-4"
+        variants={sectionVariants}
+        initial="hidden"
+        animate="visible"
+      >
         <div className="container mx-auto px-4 py-20">
           <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">
             Contact <span className="text-green-500">Me</span>
@@ -556,12 +594,12 @@ export default function Portfolio() {
                 <div>
                   <label htmlFor="subject" className="block text-sm font-medium mb-1">
                     Subject
-                  </label>
-                  <Input
-                    id="subject"
-                    placeholder="Subject"
-                    className="bg-black/50 border-green-500/30 focus:border-green-500 text-sm md:text-base"
-                  />
+                    </label>
+                    <Input
+                      id="subject"
+                      placeholder="Subject"
+                      className="bg-black/50 border-green-500/30 focus:border-green-500 text-sm md:text-base"
+                    />
                 </div>
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium mb-1">
@@ -582,7 +620,7 @@ export default function Portfolio() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Footer */}
       <footer className="relative z-10 border-t border-green-500/20 bg-black/80">
