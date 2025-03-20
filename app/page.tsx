@@ -423,7 +423,7 @@ export default function Portfolio() {
                 title: "Portfolio Website Ø",
                 description: "Custom portfolio website with animations and responsive design.",
                 tech: ["Typescript", "Taillwind-css", "JavaScript", "React.js", "ShadcnUI", "MongoDb"],
-                image: "/placeholder.svg?height=200&width=300",
+                image: "/photo6.png?height=200&width=300",
               },
               {
                 title: "Restaurant Website (RESTORAN 🍴🥗)",
