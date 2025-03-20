@@ -412,7 +412,7 @@ export default function Portfolio() {
                 description:
                   "A website consisting of medical treatment with ayurved features like- bed booking,blood bank, chatbot,etc.",
                 tech: ["React", "Flask", "MongoDB", "JavaScript"],
-                image: "/placeholder.svg?height=200&width=300",
+                image: "/photo1.png?height=200&width=300",
               },
               {
                 title: "Capture The Flag (CTF🚩)",
@@ -424,7 +424,7 @@ export default function Portfolio() {
                 title: "Coffee Website (Brew-Heaven☕)",
                 description: "Coffee Website with uniques features and great UI with maps feature avialable.",
                 tech: ["React", "Java-Script","Node.js/Express", "Tailwind-Css", "MongoDB"],
-                image: "/placeholder.svg?height=200&width=300",
+                image: "/photo2.png?height=200&width=300",
               },
               {
                 title: "Portfolio Website Ø",
@@ -436,13 +436,13 @@ export default function Portfolio() {
                 title: "Restaurant Website (RESTORAN 🍴🥗)",
                 description: "A restaurant website made for fun and to get your watery mouth",
                 tech: ["React", "Javascript","TypeScript", "Tailwind CSS", "Flask/Python"],
-                image: "/placeholder.svg?height=200&width=300",
+                image: "/photo3.png?height=200&width=300",
               },
               {
                 title: "Jal-Saaf-Tech 💧",
                 description: "Website made for water security with an IOT Device embedded and maps feature",
                 tech: ["React.js", "Tailwaind CSS", "Flask/Python", "MongoDB",],
-                image: "/placeholder.svg?height=200&width=300",
+                image: "/photo4.png?height=200&width=300",
               },
             ].map((project, index) => (
               <Card
